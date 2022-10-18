@@ -57,7 +57,7 @@ h1 {
   list-style: none;
   width: 100%;
 }
-.nav-list-item {
+.nav-list-item{
   background-color: #808080;
   color: white;
   line-height: 2em;
@@ -101,11 +101,16 @@ img {
   .main {
     flex-direction: row;
   }
+ 
+    .navigation {
+    width: 25%;
+  }
 
   .content {
     width: 80%;
   }
-  .navigation {
-    width: 25%;
+
+  .section {
+    width: 75%;
   }
 }
