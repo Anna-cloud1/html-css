@@ -72,7 +72,7 @@ justify-content: space-between;
    list-style: none;
    width: 100%;
 }
-.nav-list>li{
+.nav-list-item{
    background-color: #808080;
    color: white;
    line-height: 2em;
@@ -80,7 +80,7 @@ justify-content: space-between;
     padding-left: 0.5em;
     padding-right: 0.5em;
 }
-a{
+.nav-list-link{
    display: block;
    text-decoration: none;
    color: white;
@@ -95,19 +95,34 @@ img {
 }
 
 
-.navigation {
-    display: flex;
-    width: 100%;
+
+@media screen and (max-width: 600px){
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .navigation,
+    .section,
+    .news {
+       
+        width: 100%;
+    }
 }
 
-
-.section {
-    display: flexbox;
-    width: 100%;
-    
-}
-
-.news{
-    display: flex;
-    width: 100%;
+@media screen and (min-width:600px) and (min-width: 1199) {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+    .section {
+        display: flex;
+        width: 80%;
+    }
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+    .news {
+        width: 100vw;
+    }
 }
