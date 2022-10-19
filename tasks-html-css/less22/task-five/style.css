@@ -109,20 +109,20 @@ img {
     }
 }
 
-@media screen and (min-width:600px) and (min-width: 1199) {
-    .main {
+@media screen and (min-width:600px) and (max-width: 1199) {
+    /* .main {
         display: flex;
         flex-direction: column;
-    }
+    } */
     .section {
         display: flex;
-        width: 80%;
+        width: 60%;
     }
     .content {
         display: flex;
         flex-direction: row;
     }
     .news {
-        width: 100vw;
+        width: 20vw;
     }
 }
