@@ -39,7 +39,7 @@ h1 {
   flex: 1;
 }
 
-.units-list {
+.units-list, p {
   line-height: 1.75em;
   font-size: 1.25em;
 }
