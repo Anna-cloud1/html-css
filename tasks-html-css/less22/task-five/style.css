@@ -81,9 +81,12 @@ img {
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-
 @media screen and (min-width: 600px) {
 
+   div {
+   display: flex;
+   flex-direction: row;
+}
   .section {
     width: 80vw;
   }
@@ -91,11 +94,35 @@ img {
     width: 20vw;
   }
 }
-@media screen and (min-width: 900px) {
+
+
+
+@media (min-width:601) and (max-width: 900px) {
+div {
+   display: flex;
+}
+.navigation {
+   height: 100vh;
+   flex: 1;
+}
+.section {
+   height: 100vh;
+   flex: 1;
+}
+}
+
+
+@media screen and (min-width: 901px) {
   .main {
     flex-direction: row;
   }
   .navigation {
-    width: 25vw;
+    width: 20vw;
+  }
+  .news {
+    width: 20vw;
+  }
+  .section {
+    width: 60vw;
   }
 }
