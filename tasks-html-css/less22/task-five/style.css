@@ -41,11 +41,13 @@ h1 {
 
 .units-list {
   line-height: 1.75em;
+  font-size: 1.25em;
 }
+
 .css-units {
   color: #8b0000;
   background-color: #e5e5e5;
-  font-size: 1.125em;
+   font-size: 1.25em;
   font-weight: 700;
 }
 .section__header {
