@@ -16,10 +16,6 @@ body {
   height: 100px;
   background-color: #ff7f50;
   margin: 8px;
-  @include for-extra-small {
-    margin: 16px;
-    background-color: #ff7f50;
-  }
 
   @include for-small-medium {
     background-color: #8a2be2;
@@ -32,20 +28,12 @@ body {
   @include for-large-up {
     background-color: #c47;
   }
-  @include landscape {
-    flex-direction: column;
-  }
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
   @include landscape {
-    display: flex;
     flex-direction: row;
   }
 }
-
-// .container {
-//     @include for-medium-up {
-//         background-color: azure;
-//     }
-// }

@@ -15,12 +15,6 @@ body {
   background-color: #ff7f50;
   margin: 8px;
 }
-@media screen and (max-width: 600px) {
-  .square {
-    margin: 16px;
-    background-color: #ff7f50;
-  }
-}
 @media screen and (min-width: 600px) and (max-width: 899px) {
   .square {
     background-color: #8a2be2;
@@ -36,15 +30,13 @@ body {
     background-color: #c47;
   }
 }
-@media screen and (orientation: landscape) {
-  .square {
-    flex-direction: column;
-  }
-}
 
+.container {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (orientation: landscape) {
   .container {
-    display: flex;
     flex-direction: row;
   }
 }
