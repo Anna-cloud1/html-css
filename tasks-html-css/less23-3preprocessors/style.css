@@ -28,8 +28,7 @@
   color: yellow;
 }
 .menu__item_active:hover .submenu {
-  display: flex;
-  flex-direction: column;
+  display: inline-block;
 }
 
 .submenu {

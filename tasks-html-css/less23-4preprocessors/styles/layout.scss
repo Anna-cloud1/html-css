@@ -1,0 +1,14 @@
+$small: 600px;
+$medium: 900px;
+
+@mixin medium {
+  @media screen and (min-width: $small) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: $medium) {
+    @content;
+  }
+}
